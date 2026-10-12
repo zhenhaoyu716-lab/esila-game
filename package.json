@@ -1,0 +1,13 @@
+{
+  "name": "esila-game",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.cjs",
+    "test": "node --test physics.test.cjs",
+    "deploy": "npm run build && wrangler pages deploy cloudflare-site --project-name esila-game --branch main"
+  },
+  "devDependencies": {
+    "wrangler": "4.148.0"
+  }
+}
